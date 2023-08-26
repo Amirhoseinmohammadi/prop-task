@@ -3,8 +3,7 @@
     <div class="d-flex flex-column">
       <p class="text-primary">{{ text }}</p>
       <p class="text-danger">{{ number }}</p>
-
-      <button @data="dataToInput"></button>
+ 
     </div>
   </div>
 </template>
@@ -22,9 +21,7 @@ export default {
     },
   },
   methods: {
-    dataToInput() {
-      this.$emit("dataPass", { text: this.text, number: this.number })
-    },
+   
   },
 }
 </script>
